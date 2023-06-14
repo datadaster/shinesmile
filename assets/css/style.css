@@ -461,16 +461,17 @@ body {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   vertical-align: middle;
+  transform-style: preserve-3d;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: white;
+  background-color: transparent;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: white;
+  background-color: transparent;
   transform: rotateY(180deg);
 }
 
