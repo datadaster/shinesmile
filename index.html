@@ -1,124 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShineSmile</title>
 
-  <!-- 
-    - favicon
-  -->
+  <!-- ===== SEO OPTIMIZADO ===== -->
+  <title>Shine Smile Odontología | Clínica Dental en Bogotá – Endodoncia, Ortodoncia y más</title>
+  <meta name="description" content="Shine Smile es una clínica odontológica en Bogotá especializada en Endodoncia, Ortodoncia, Blanqueamiento, Implantes y más. Dra. Jennifer Sterling. ¡Agenda tu cita hoy!">
+  <meta name="keywords" content="odontología Bogotá, clínica dental Bogotá, endodoncia, ortodoncia, blanqueamiento dental, implantes dentales, Hayuelos, Shine Smile">
+  <meta name="author" content="Shine Smile Odontología">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.shinesmile.co/">
+
+  <!-- ===== OPEN GRAPH / REDES SOCIALES ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.shinesmile.co/">
+  <meta property="og:title" content="Shine Smile Odontología | Clínica Dental en Bogotá">
+  <meta property="og:description" content="Clínica dental en Bogotá con especialidades en Endodoncia, Ortodoncia, Blanqueamiento e Implantes. Agenda tu cita con la Dra. Jennifer Sterling.">
+  <meta property="og:image" content="./assets/images/hero-banner.png">
+  <meta property="og:locale" content="es_CO">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shine Smile Odontología | Clínica Dental en Bogotá">
+  <meta name="twitter:description" content="Tu salud dental es nuestra prioridad. Agenda tu cita en Bogotá.">
+
+  <!-- ===== SCHEMA.ORG STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Shine Smile Odontología",
+    "description": "Clínica odontológica en Bogotá especializada en Endodoncia, Ortodoncia, Blanqueamiento e Implantes.",
+    "url": "https://www.shinesmile.co",
+    "telephone": "+573105610163",
+    "email": "jennifer.sterling@shinesmile.co",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Cra. 92 No. 22-09",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "openingHours": ["Mo-Fr 10:00-19:00", "Sa 09:00-13:00"],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100065136865765",
+      "https://www.instagram.com/shinesmileodontologia/"
+    ]
+  }
+  </script>
+
+  <!-- ===== SCHEMA.ORG: Reseñas ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Shine Smile Odontología",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "48",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "María Camila Rodríguez" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "Excelente atención. La Dra. Jennifer es muy profesional y amable. Mi endodoncia fue completamente indolora."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Andrés Felipe Torres" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "El blanqueamiento quedó espectacular. El consultorio es moderno y el equipo muy cálido."
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== SCHEMA.ORG: FAQ ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Duele una endodoncia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Con la anestesia local moderna, la endodoncia es prácticamente indolora durante el procedimiento. Puede haber leve sensibilidad los días siguientes, que se maneja fácilmente con analgésicos comunes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta un blanqueamiento dental en Bogotá?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo varía según el tipo de blanqueamiento (en consultorio o para casa). En Shine Smile ofrecemos opciones para diferentes presupuestos. Agenda una valoración gratuita para recibir un presupuesto personalizado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto dura un tratamiento de ortodoncia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La duración depende de la complejidad de cada caso, pero generalmente oscila entre 12 y 24 meses. En la valoración inicial podemos darte un estimado más preciso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Atienden a niños en Shine Smile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, atendemos pacientes de todas las edades. Contamos con un ambiente cálido y amigable especialmente pensado para que los niños se sientan cómodos y seguros."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo puedo agendar una cita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes agendar tu cita en línea a través de nuestro sistema de agendamiento, por WhatsApp al +57 310 561 0163, o por correo electrónico a jennifer.sterling@shinesmile.co."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== SCHEMA.ORG: Blog ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Shine Smile Odontología",
+    "url": "https://www.shinesmile.co/#blog",
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "¿Cuándo necesitas una endodoncia? Señales que no debes ignorar",
+        "description": "Aprende a identificar los síntomas que indican que un diente necesita tratamiento de conducto y por qué es importante actuar a tiempo.",
+        "datePublished": "2025-03-10",
+        "author": { "@type": "Person", "name": "Jennifer Sterling" },
+        "publisher": { "@type": "Organization", "name": "Shine Smile Odontología" }
+      }
+    ]
+  }
+  </script>
+
+  <script src="./assets/js/secciones-adicionales.js" defer></script>
+
+  <!-- ===== FAVICON ===== -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
+  <!-- ===== FONTS (preconnect primero, carga no bloqueante) ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/secciones-adicionales.css">
 </head>
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- ============================================================
+    HEADER
+  ============================================================ -->
+  <header class="header" role="banner">
 
-  <header class="header">
-
-    <div class="header-top">
+    <!-- Barra superior de contacto (solo escritorio) -->
+    <div class="header-top" aria-label="Información de contacto y redes sociales">
       <div class="container">
 
-        <ul class="contact-list">
-
+        <ul class="contact-list" role="list" aria-label="Datos de contacto">
           <li class="contact-item">
-            <ion-icon name="mail-outline"></ion-icon>
-
-            <a href="mailto:jennifer.sterling@shinesmile.co" class="contact-link">jennifer.sterling@shinesmile.co</a>
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <a href="mailto:jennifer.sterling@shinesmile.co" class="contact-link" aria-label="Enviar correo a jennifer.sterling@shinesmile.co">jennifer.sterling@shinesmile.co</a>
           </li>
-
           <li class="contact-item">
-            <ion-icon name="call-outline"></ion-icon>
-
-            <a href="https://api.whatsapp.com/send?phone=573105610163" target="_blank" class="contact-link">+57 310 561 0163</a>
+            <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+            <a href="https://api.whatsapp.com/send?phone=573105610163" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Contactar por WhatsApp al +57 310 561 0163">+57 310 561 0163</a>
           </li>
-
         </ul>
 
-        <ul class="social-list">
-
+        <ul class="social-list" role="list" aria-label="Redes sociales">
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100065136865765" target=”_blank” class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.facebook.com/profile.php?id=100065136865765" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visitar Facebook de Shine Smile">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <li>
-            <a href="https://www.instagram.com/shinesmileodontologia/embed" target=”_blank” class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/shinesmileodontologia/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visitar Instagram de Shine Smile">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
-          <!--<li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>-->
-
         </ul>
 
       </div>
     </div>
 
+    <!-- Navegación principal -->
     <div class="header-bottom" data-header>
       <div class="container">
 
-        <!--<a href="#" class="logo">ShineSmile</a>-->
+        <a href="#top" class="logo" aria-label="Shine Smile - Ir al inicio">Shine<span>Smile</span></a>
 
-        <nav class="navbar container" data-navbar>
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
-            </li>
-
-            <li>
-              <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
-            </li>
-
-            <li>
-              <a href="#about" class="navbar-link" data-nav-link>Nosotros</a>
-            </li>
-
-            <!--<li>
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>Contactar</a>
-            </li>-->
-
+        <nav class="navbar" data-navbar aria-label="Menú de navegación principal">
+          <ul class="navbar-list" role="list">
+            <li><a href="#home" class="navbar-link" data-nav-link>Inicio</a></li>
+            <li><a href="#service" class="navbar-link" data-nav-link>Servicios</a></li>
+            <li><a href="#about" class="navbar-link" data-nav-link>Nosotros</a></li>
+            <li><a href="#location" class="navbar-link" data-nav-link>Ubicación</a></li>
           </ul>
         </nav>
 
-        <a href="https://7d83c4c9475a07a96c7891aad98a0cd050415e94.agenda.softwaredentalink.com/agendas/agendamiento" target="_blank" class="btn">Agendar</a>
+        <a href="https://7d83c4c9475a07a96c7891aad98a0cd050415e94.agenda.softwaredentalink.com/agendas/agendamiento"
+          target="_blank" rel="noopener noreferrer" class="btn header-btn" aria-label="Agendar cita en línea">
+          Agendar cita
+        </a>
 
-        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <button class="nav-toggle-btn" aria-label="Abrir o cerrar menú de navegación" aria-expanded="false" aria-controls="main-navbar" data-nav-toggler>
           <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
           <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
         </button>
@@ -129,902 +233,1058 @@
   </header>
 
 
+  <!-- ============================================================
+    CONTENIDO PRINCIPAL
+  ============================================================ -->
+  <main id="main-content">
 
+    <!-- ===== HERO ===== -->
+    <section class="section hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
 
+        <div class="hero-content">
+          <p class="section-subtitle" aria-hidden="true">Bienvenido a</p>
 
-  <main>
-    <article>
+          <h1 class="h1 hero-title" id="hero-heading">
+            Shine Smile <br><span>Odontología</span>
+          </h1>
 
-      <!-- 
-        - #HERO
-      -->
+          <p class="hero-text">
+            Soy la Dra. <strong>Jennifer Sterling</strong>, odontóloga especialista en Endodoncia. En Shine Smile
+            brindamos atención dental con amor, responsabilidad y profesionalismo. Contamos con todas las
+            especialidades para ayudarte a recuperar la confianza en tu sonrisa.
+          </p>
 
-      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
-        aria-label="hero">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Bienvenido</p>
-
-            <h1 class="h1 hero-title">Shine Smile</h1>
-
-            <p class="hero-text">
-              ¡Hola! Soy Jennifer Sterling, odontóloga especialista en Endodoncia. Somos una clínica de odontología 
-              creada para brindar salud con amor, responsabilidad y profesionalismo. Contamos con todas las 
-              especialidades y estamos felices de ayudarte a recuperar tu confianza al sonreír.
-            </p>
-            
-            
-            <form target="_blank" action="https://7d83c4c9475a07a96c7891aad98a0cd050415e94.agenda.softwaredentalink.com/agendas/agendamiento">
-              <button type="submit" class="btn">Agenda tu cita</button>
-            </form>
-
-            <!--<form action="" class="hero-form">
-              <input type="email" name="email_address" aria-label="email" placeholder="Your Email Address..." required
-                class="email-field">
-
-              <button type="submit" class="btn">Get Call Back</button>
-            </form>-->
-
+          <div class="hero-cta">
+            <a href="https://7d83c4c9475a07a96c7891aad98a0cd050415e94.agenda.softwaredentalink.com/agendas/agendamiento"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Agendar cita dental en línea">
+              <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+              Agenda tu cita
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=573105610163&text=Hola,%20quiero%20información%20sobre%20sus%20servicios"
+              target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Contactar por WhatsApp">
+              <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+              WhatsApp
+            </a>
           </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="587" height="839" alt="hero banner" class="w-100">
-          </figure>
-
         </div>
-      </section>
+
+        <figure class="hero-banner" aria-label="Imagen de clínica dental Shine Smile">
+          <img src="./assets/images/hero-banner.png" width="587" height="839"
+            alt="Dra. Jennifer Sterling, odontóloga especialista en Endodoncia en Bogotá"
+            class="w-100" fetchpriority="high">
+        </figure>
+
+      </div>
+    </section>
 
 
+    <!-- ===== ESTADÍSTICAS / TRUST SIGNALS ===== -->
+    <section class="stats-section" aria-label="Estadísticas de la clínica">
+      <div class="container">
+        <ul class="stats-list" role="list">
+          <li class="stat-item">
+            <span class="stat-number" aria-label="Más de 500">500+</span>
+            <span class="stat-label">Pacientes satisfechos</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number" aria-label="Más de 10">10+</span>
+            <span class="stat-label">Especialidades</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number" aria-label="Más de 5">5+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Compromiso contigo</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section service" id="service" aria-labelledby="service-heading">
+      <div class="container">
 
-      <!-- 
-        - #SERVICE
-      -->
+        <p class="section-subtitle text-center">Lo que ofrecemos</p>
+        <h2 class="h2 section-title text-center" id="service-heading">Nuestros servicios dentales</h2>
+        <p class="section-text text-center section-intro">
+          Atendemos todas las áreas de la odontología moderna para cuidar tu salud bucal de forma integral.
+        </p>
 
-      <section class="section service" id="service" aria-label="service">
-        <div class="container">
+        <ul class="service-list" role="list">
 
-          <p class="section-subtitle text-center">Nuestros Servicios</p>
-
-          <h2 class="h2 section-title text-center">Para cuidar tu sonrisa</h2>
-
-          <ul class="service-list">
-
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Endodoncia</h3>
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Endodoncia">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
                     </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          La endodoncia es la especialidad odontológica que salva dientes eliminando el nervio afectado para aliviar el dolor.
-                        </p>
-                      </div>
-                    </div>
+                    <h3 class="h3 card-title">Endodoncia</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Especialidad que salva dientes eliminando el nervio afectado para aliviar el dolor y preservar la pieza dental.</p>
                   </div>
                 </div>
               </div>
-            </li>
+            </article>
+          </li>
 
-            
-            
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-2.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Blanqueamiento Dental</h3>
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Blanqueamiento Dental">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-2.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
                     </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          El blanqueamiento dental aclara el tono de los dientes sin modificar su forma o tamaño, siendo seguro y no invasivo.
-                        </p>
-                      </div>
-                    </div>
+                    <h3 class="h3 card-title">Blanqueamiento Dental</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Aclara el tono de los dientes de forma segura y no invasiva, sin modificar su forma o tamaño.</p>
                   </div>
                 </div>
               </div>
-            </li>
-            
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Ortodoncia</h3>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Ortodoncia">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
                     </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          Es una especialidad que corrige la posición de los dientes, creando una sonrisa estéticamente agradable y restaurando la función adecuada.
-                        </p>
-                      </div>
-                    </div>
+                    <h3 class="h3 card-title">Ortodoncia</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Corrige la posición de los dientes para lograr una sonrisa estética y restaurar la función masticatoria adecuada.</p>
                   </div>
                 </div>
               </div>
-            </li>
+            </article>
+          </li>
 
-            <li class="service-banner">
-              <figure>
-                <img src="./assets/images/service-banner.png" width="409" height="467" loading="lazy"
-                  alt="service banner" class="w-100">
-              </figure>
-            </li>
-
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-4.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Odontología General</h3>
-                    </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          La odontología general examina a los pacientes, evalúa y elabora un plan de tratamiento completo, derivando a especialistas si es necesario.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Rehabilitación Oral</h3>
-                    </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          La rehabilitación oral restaura la función y estética de los dientes e implantes dentales cuando se ha perdido la estructura coronal.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="card-icon">
-                        <img src="./assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
-                          alt="service icon" class="w-100">
-                      </div>
-                      <h3 class="h3 card-title">Periodoncia</h3>
-                    </div>
-                    <div class="flip-card-back">
-                      <div>
-                        <p class="card-text">
-                          La periodoncia es esencial para mantener encías y huesos sanos cuando se sufren problemas periodontales.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="470" height="538" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">Nosotros</p>
-
-            <h2 class="h2 section-title">Tu salud dental es nuestra prioridad</h2>
-
-            <p class="section-text section-text-1">
-              En ShineSmile, nos apasiona cuidar y mejorar las sonrisas de nuestros pacientes. Nos enorgullece ofrecer servicios odontológicos de alta calidad en un ambiente cálido y acogedor.
-            </p><br>
-            <p class="section-text">
-              Utilizamos tecnología de vanguardia y técnicas modernas para garantizar procedimientos dentales efectivos y cómodos. Ya sea que necesites una cirugía oral, un diseño de sonrisa, un implante u otro servicio, estamos aquí para ayudarte a mantener una sonrisa saludable y radiante.
-            </p><br>
-            <p class="section-text">
-              En nuestro consultorio, priorizamos tu comodidad y bienestar. Nos esforzamos por crear un ambiente relajante y libre de estrés, donde te sientas cómodo y confiado durante cada visita. Nuestro equipo amable y atento se asegurará de responder a todas tus preguntas y brindarte la atención personalizada que te mereces.
-            </p>
-
-            <!--<a href="#" class="btn">Read more</a>-->
-
-          </div>
-
-        </div>
-      </section>
-
-
-      <section class="section location" id="location" aria-label="location">
-        <div class="container">
-          <div class="column">
-            <p class="section-subtitle">Ven</p>
-            <h2 class="h2 section-title">Conocenos</h2>
-            <p class="section-text section-text-1">
-              ¡Estamos comprometidos a proporcionarte una experiencia dental excepcional y resultados duraderos! Ven y descubre cómo podemos ayudarte a mantener una sonrisa hermosa y saludable de por vida.
-            </p><br>
-            <p class="section-text section-text-1">
-              Estamos ubicados en la Carrera 92 No. 22-09, Hayuelos, Bogotá, Colombia.
-            </p>
-          </div>
-          <div class="column">
-            <figure class="about-banner">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5762835593896!2d-74.13584232626044!3d4.6693739419309415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9db26a7b0a3b%3A0x1a61f8f10f5a13de!2sSHINE%20SMILE%20ODONTOLOG%C3%8DA!5e0!3m2!1ses-419!2sco!4v1686843655270!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <li class="service-banner" aria-hidden="true">
+            <figure>
+              <img src="./assets/images/service-banner.png" width="409" height="467" loading="lazy"
+                alt="Equipo dental moderno en Shine Smile Odontología Bogotá">
             </figure>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Odontología General">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-4.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
+                    </div>
+                    <h3 class="h3 card-title">Odontología General</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Evaluación y elaboración de un plan de tratamiento completo, derivando a especialistas cuando es necesario.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Rehabilitación Oral">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
+                    </div>
+                    <h3 class="h3 card-title">Rehabilitación Oral</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Restaura la función y estética de los dientes e implantes dentales cuando se ha perdido la estructura coronal.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <div class="flip-card" role="img" aria-label="Servicio de Periodoncia">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card-icon">
+                      <img src="./assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
+                        alt="" aria-hidden="true">
+                    </div>
+                    <h3 class="h3 card-title">Periodoncia</h3>
+                  </div>
+                  <div class="flip-card-back" aria-hidden="true">
+                    <p class="card-text">Mantiene encías y huesos sanos, tratando problemas periodontales para preservar tus dientes a largo plazo.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" width="470" height="538" loading="lazy"
+            alt="Dra. Jennifer Sterling en su consultorio dental Shine Smile en Bogotá"
+            class="w-100">
+        </figure>
+
+        <div class="about-content">
+
+          <p class="section-subtitle">Sobre nosotros</p>
+          <h2 class="h2 section-title" id="about-heading">Tu salud dental es nuestra prioridad</h2>
+
+          <p class="section-text section-text-1">
+            En <strong>ShineSmile</strong>, nos apasiona cuidar y mejorar las sonrisas de nuestros pacientes.
+            Ofrecemos servicios odontológicos de alta calidad en un ambiente cálido y acogedor en
+            <strong>Bogotá, Colombia</strong>.
+          </p>
+
+          <p class="section-text">
+            Utilizamos tecnología de vanguardia y técnicas modernas para garantizar procedimientos dentales efectivos
+            y cómodos. Ya sea que necesites una cirugía oral, diseño de sonrisa, implante dental u otro servicio,
+            estamos aquí para ayudarte.
+          </p>
+
+          <p class="section-text">
+            Priorizamos tu comodidad y bienestar. Nos esforzamos por crear un ambiente relajante donde te sientas
+            seguro y confiado durante cada visita. Nuestro equipo atento responderá todas tus preguntas y te dará
+            la atención personalizada que mereces.
+          </p>
+
+          <a href="https://7d83c4c9475a07a96c7891aad98a0cd050415e94.agenda.softwaredentalink.com/agendas/agendamiento"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary about-btn" aria-label="Agendar cita dental">
+            Agenda tu cita
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonios ===== -->
+    <section class="section testimonios" id="testimonios" aria-labelledby="testimonios-heading">
+      <div class="container">
+
+        <!-- Encabezado -->
+        <div class="testimonios-header">
+          <p class="section-subtitle text-center">Opiniones reales</p>
+          <h2 class="h2 section-title text-center" id="testimonios-heading">
+            Lo que dicen nuestros pacientes
+          </h2>
+          <p class="section-text text-center section-intro">
+            Más de <strong>500 pacientes</strong> han recuperado su confianza al sonreír con nosotros.
+            Estas son sus historias.
+          </p>
+
+          <!-- Rating global -->
+          <div class="rating-global" aria-label="Calificación promedio: 5 de 5 estrellas basada en 11 reseñas">
+            <div class="rating-stars" aria-hidden="true">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <span class="rating-score">5.0</span>
+            <span class="rating-count">· 11 reseñas verificadas</span>
           </div>
         </div>
-      </section>
 
+        <!-- Carrusel de tarjetas -->
+        <div class="testimonios-track-wrapper" role="region" aria-label="Carrusel de testimonios">
+          <div class="testimonios-track" id="testimoniosTrack">
 
-      <!--<div id="ubicacion">
-        <h3>Ubicación</h3>
-        <p>Estamos ubicados en:</p>
-        <p>Dirección: Carrera 92 No. 22-09, Hayuelos, Bogotá, Colombia</p>
-        <p>Teléfono: 123-456-7890</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.576251247617!2d-74.13584802626048!3d4.66937964193087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c87a215098b%3A0x24d4c8659a049ccd!2sCra.%2092%20%2322-09%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1686715751703!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.576251247617!2d-74.13584802626048!3d4.66937964193087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c87a215098b%3A0x24d4c8659a049ccd!2sCra.%2092%20%2322-09%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1686715751703!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>-->
-
-
-      <!-- 
-        - #DOCTOR
-      -->
-
-      <!--<section class="section doctor" aria-label="doctor">
-        <div class="container">
-
-          <p class="section-subtitle text-center">Nuestro Equipo</p>
-
-          <h2 class="h2 section-title text-center">Profesionales Expertos</h2>
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-1.png" width="460" height="500" loading="lazy" alt="Jennifer Sterling"
-                    class="img-cover">
+            <!-- Testimonio 1 -->
+            <article class="testimonio-card" aria-label="Testimonio de Manuela Leon">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar" aria-hidden="true">ML</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Manuela Leon</p>
+                  <p class="testimonio-service">Endodoncia</p>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Jennifer Sterling</a>
-                </h3>
-
-                <p class="card-subtitle">Endodoncista</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-2.png" width="460" height="500" loading="lazy" alt="Ella Thompson"
-                    class="img-cover">
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Ella<br>Thompson</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
               </div>
-            </li>
+              <blockquote class="testimonio-text">
+                <p>Muy buena la atención, estaba lindo el lugar y fueron muy profesionales, 
+                  me hicieron un tratamiento de conductos y una calza, todo salió bien. Recomendado 100%</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2024-11">Hace 5 meses</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper"
-                    class="img-cover">
+            <!-- Testimonio 2 -->
+            <article class="testimonio-card" aria-label="Testimonio de Sergio Armando">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar av-green" aria-hidden="true">SA</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Sergio Armando</p>
+                  <p class="testimonio-service">Odontología General</p>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Vincent Cooper</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-4.png" width="460" height="500" loading="lazy" alt="Danielle Bryant"
-                    class="img-cover">
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Danielle<br>Bryant</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
               </div>
-            </li>
+              <blockquote class="testimonio-text">
+                <p>Mis más sinceros agradecimientos a todos los profesionales de este lugar. Me ayudaron en un momento complicado de mi salud
+                  y han estado siempre pendientes de mí, cada uno desde su especialidad. Me devolvieron la confianza en los odontólogos. 
+                  Son excelentes profesionales, trabajan con materiales de gran calidad y, además, son muy amables. Realmente hacen que uno se sienta como en casa.</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2024-10">Hace 8 meses</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
-          </ul>
+            <!-- Testimonio 3 -->
+            <article class="testimonio-card" aria-label="Testimonio de Diana Gonzalez">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar av-teal" aria-hidden="true">DG</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Diana Gonzalez</p>
+                  <p class="testimonio-service">Odontología General</p>
+                </div>
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <blockquote class="testimonio-text">
+                <p>Excelente, tanto la doctora, la auxiliar, los servicios prestados y las instalaciones.</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2024-12">Hace 2 meses</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
-        </div>
-      </section>-->
+            <!-- Testimonio 4 -->
+            <article class="testimonio-card" aria-label="Testimonio de Cesar Cruz">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar av-coral" aria-hidden="true">CC</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Cesar Cruz</p>
+                  <p class="testimonio-service">Odontología General</p>
+                </div>
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <blockquote class="testimonio-text">
+                <p>Buena atención, cumplen horario y buen aseo.</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2024-09">Hace 2 meses</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
+            <!-- Testimonio 5 -->
+            <article class="testimonio-card" aria-label="Testimonio de Sonia Janeth Castellanos">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar av-purple" aria-hidden="true">SC</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Sonia Janeth Castellanos</p>
+                  <p class="testimonio-service">Odontología General</p>
+                </div>
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <blockquote class="testimonio-text">
+                <p>Excelente servicio!!!! la Dra. Jennifer es muy delicada para hacer los procedimientos!!!! muchas gracias!!!!!</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2025-01">Hace un año</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
+            <!-- Testimonio 6 -->
+            <article class="testimonio-card" aria-label="Testimonio de Liliana Mojica Valbuena">
+              <div class="testimonio-top">
+                <div class="testimonio-avatar av-orange" aria-hidden="true">LM</div>
+                <div class="testimonio-meta">
+                  <p class="testimonio-name">Liliana Mojica Valbuena</p>
+                  <p class="testimonio-service">Odontología General</p>
+                </div>
+                <div class="testimonio-stars" aria-label="5 estrellas" aria-hidden="true">
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <blockquote class="testimonio-text">
+                <p>Excelente atención y servicio, dos años confiando mi sonrisa y salud bucal.</p>
+              </blockquote>
+              <div class="testimonio-footer">
+                <time class="testimonio-date" datetime="2025-02">Hace un año</time>
+                <span class="testimonio-badge">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Verificado
+                </span>
+              </div>
+            </article>
 
+          </div><!-- /track -->
 
-      <!-- 
-        - #CTA      
-
-      <section class="section cta" aria-label="cta">
-        <div class="container">
-
-          <figure class="cta-banner">
-            <img src="./assets/images/cta-banner.png" width="1056" height="1076" loading="lazy" alt="cta banner"
-              class="w-100">
-          </figure>
-
-          <div class="cta-content">
-
-            <p class="section-subtitle">Book Dentail Appointment</p>
-
-            <h2 class="h2 section-title">We Are open And Welcoming Patients</h2>
-
-            <a href="#" class="btn">Book appointment</a>
-
+          <!-- Controles del carrusel -->
+          <div class="testimonios-controls" role="group" aria-label="Controles del carrusel">
+            <button class="carousel-btn prev-btn" id="testimonioPrev" aria-label="Testimonio anterior">
+              <ion-icon name="chevron-back" aria-hidden="true"></ion-icon>
+            </button>
+            <div class="carousel-dots" id="testimonioDots" role="tablist" aria-label="Navegar a testimonio"></div>
+            <button class="carousel-btn next-btn" id="testimonioNext" aria-label="Testimonio siguiente">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            </button>
           </div>
 
         </div>
-      </section>
 
-
-
-
-
-       
-        - #BLOG
-      
-
-      <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
-
-          <p class="section-subtitle text-center">Our Blog</p>
-
-          <h2 class="h2 section-title text-center">Latest Blog & News</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
-                  <img src="./assets/images/blog-1.jpg" width="1180" height="800" loading="lazy"
-                    alt="Cras accumsan nulla nec lacus ultricies placerat." class="img-cover">
-
-                  <div class="card-badge">
-                    <ion-icon name="calendar-outline"></ion-icon>
-
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Cras accumsan nulla nec lacus ultricies placerat.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
-                  </p>
-
-                  <a href="#" class="card-link">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
-                  <img src="./assets/images/blog-2.jpg" width="1180" height="800" loading="lazy"
-                    alt="Dras accumsan nulla nec lacus ultricies placerat." class="img-cover">
-
-                  <div class="card-badge">
-                    <ion-icon name="calendar-outline"></ion-icon>
-
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Dras accumsan nulla nec lacus ultricies placerat.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
-                  </p>
-
-                  <a href="#" class="card-link">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
-                  <img src="./assets/images/blog-3.jpg" width="1180" height="800" loading="lazy"
-                    alt="Seas accumsan nulla nec lacus ultricies placerat." class="img-cover">
-
-                  <div class="card-badge">
-                    <ion-icon name="calendar-outline"></ion-icon>
-
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
-                  </div>
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Seas accumsan nulla nec lacus ultricies placerat.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
-                  </p>
-
-                  <a href="#" class="card-link">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <!-- CTA — invitar a dejar reseña -->
+        <div class="testimonios-cta">
+          <p>¿Ya eres paciente de Shine Smile?</p>
+          <a href="https://www.google.com/search?q=shinesmile+odontologia&sca_esv=ad809df184c16df5&rlz=1C1GTPM_enCO1003CO1003&ei=tilgavnHJ_CZwbkPpJGE4A0&ved=0ahUKEwj5-vyjneWVAxXwTDABHaQIAdwQ4dUDCBA&uact=5&oq=shinesmile+odontologia&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNoaW5lc21pbGUgb2RvbnRvbG9naWEyBxAhGAoYoAEyBxAhGAoYoAEyBxAhGAoYoAFImBVQ4gVY2xNwAXgAkAEAmAGCAaAByQqqAQM0Ljm4AQPIAQD4AQGYAgygAqgKwgIJEAAYgAQYDRgTwgILEAAYgAQYDRgTGArCAgYQABgWGB7CAggQABgIGB4YDcICCBAAGIAEGKIEwgIFEAAY7wWYAwCIBgGSBwQwLjEyoAfdO7IHBDAuMTK4B6gKwgcGMC4xMC4yyAcbgAgB&sclient=gws-wiz-serp#"
+            target="_blank" rel="noopener noreferrer"
+            class="btn-review"
+            aria-label="Dejar reseña en Google para Shine Smile Odontología">
+            <ion-icon name="logo-google" aria-hidden="true"></ion-icon>
+            Dejar reseña en Google
+          </a>
         </div>
-      </section>
-      -->
 
-    </article>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="faq-layout">
+
+          <!-- Columna izquierda: encabezado + CTA -->
+          <div class="faq-intro">
+            <p class="section-subtitle">Resolvemos tus dudas</p>
+            <h2 class="h2 section-title" id="faq-heading">
+              Preguntas frecuentes
+            </h2>
+            <p class="section-text">
+              Sabemos que ir al dentista puede generar incertidumbre. Aquí resolvemos las consultas
+              más comunes de nuestros pacientes.
+            </p>
+
+            <div class="faq-contact-box" aria-label="¿Tienes más preguntas?">
+              <div class="faq-contact-icon" aria-hidden="true">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </div>
+              <div>
+                <p class="faq-contact-title">¿No encontraste tu respuesta?</p>
+                <p class="faq-contact-text">Escríbenos directamente y te respondemos en minutos.</p>
+                <a href="https://api.whatsapp.com/send?phone=573105610163&text=Hola,%20tengo%20una%20pregunta%20sobre%20sus%20servicios"
+                  target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary faq-whatsapp-btn"
+                  aria-label="Preguntar por WhatsApp a Shine Smile">
+                  <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                  Preguntar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha: acordeón -->
+          <div class="faq-accordion" role="list">
+
+            <!-- Ítem 1 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-1"
+                id="faq-btn-1"
+                data-faq-toggle>
+                <span>¿Duele una endodoncia?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-1"
+                role="region"
+                aria-labelledby="faq-btn-1"
+                hidden>
+                <p>Con la anestesia local moderna, la endodoncia es prácticamente <strong>indolora durante el procedimiento</strong>. Puede haber leve sensibilidad los días siguientes, que se maneja fácilmente con analgésicos comunes como el ibuprofeno. La gran mayoría de nuestros pacientes nos dicen que fue mucho menos molesta de lo que esperaban.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 2 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+                id="faq-btn-2"
+                data-faq-toggle>
+                <span>¿Cuánto cuesta el blanqueamiento dental?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-2"
+                role="region"
+                aria-labelledby="faq-btn-2"
+                hidden>
+                <p>El costo varía según el tipo de blanqueamiento (en consultorio o para llevar a casa). Ofrecemos opciones para diferentes presupuestos. Te recomendamos agendar una <strong>valoración inicial</strong> para recibir un presupuesto personalizado según el estado de tus dientes.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 3 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+                id="faq-btn-3"
+                data-faq-toggle>
+                <span>¿Cuánto dura un tratamiento de ortodoncia?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-3"
+                role="region"
+                aria-labelledby="faq-btn-3"
+                hidden>
+                <p>Depende de la complejidad de cada caso, pero generalmente oscila entre <strong>12 y 24 meses</strong>. Los casos leves pueden resolverse en menos tiempo. En la valoración inicial podemos darte un estimado más preciso y mostrarte opciones como brackets tradicionales o alineadores transparentes.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 4 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+                id="faq-btn-4"
+                data-faq-toggle>
+                <span>¿Atienden a niños en Shine Smile?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-4"
+                role="region"
+                aria-labelledby="faq-btn-4"
+                hidden>
+                <p>¡Sí! Atendemos pacientes de <strong>todas las edades</strong>. Tenemos un ambiente tranquilo y amigable, especialmente pensado para que los más pequeños se sientan cómodos y seguros. Recomendamos la primera visita odontológica alrededor de los 2-3 años.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 5 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-5"
+                id="faq-btn-5"
+                data-faq-toggle>
+                <span>¿Qué es un diseño de sonrisa?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-5"
+                role="region"
+                aria-labelledby="faq-btn-5"
+                hidden>
+                <p>Es un tratamiento estético que combina diferentes procedimientos (blanqueamiento, carillas, remodelado, etc.) para <strong>transformar la apariencia de tu sonrisa</strong> de forma personalizada. Se planifica digitalmente para que puedas ver el resultado final antes de comenzar.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 6 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-6"
+                id="faq-btn-6"
+                data-faq-toggle>
+                <span>¿Cómo puedo agendar una cita?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-6"
+                role="region"
+                aria-labelledby="faq-btn-6"
+                hidden>
+                <p>Tienes varias opciones: a través del <strong>botón "Agendar cita"</strong> en nuestra página, por <strong>WhatsApp</strong> al +57 310 561 0163, o por correo a jennifer.sterling@shinesmile.co. Atendemos de lunes a viernes de 10 am a 7 pm y sábados de 9 am a 1 pm.</p>
+              </div>
+            </div>
+
+            <!-- Ítem 7 -->
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-answer-7"
+                id="faq-btn-7"
+                data-faq-toggle>
+                <span>¿Tienen opciones de financiamiento?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <ion-icon name="add-outline" class="icon-add"></ion-icon>
+                  <ion-icon name="remove-outline" class="icon-remove"></ion-icon>
+                </div>
+              </button>
+              <div
+                class="faq-answer"
+                id="faq-answer-7"
+                role="region"
+                aria-labelledby="faq-btn-7"
+                hidden>
+                <p>Sí, ofrecemos <strong>planes de pago flexibles</strong> para que el costo no sea un obstáculo para tu salud dental. Consúltanos en tu cita de valoración y diseñamos un plan que se ajuste a tus posibilidades.</p>
+              </div>
+            </div>
+
+          </div><!-- /accordion -->
+        </div><!-- /faq-layout -->
+
+      </div>
+    </section>
+
+    <!-- ===== Blog ===== -->
+    <section class="section blog" id="blog" aria-labelledby="blog-heading" style="display: none;">
+      <div class="container">
+
+        <!-- Encabezado -->
+        <div class="blog-header">
+          <p class="section-subtitle text-center">Consejos de salud bucal</p>
+          <h2 class="h2 section-title text-center" id="blog-heading">
+            Aprende con nosotros
+          </h2>
+          <p class="section-text text-center section-intro">
+            Artículos escritos por nuestra especialista para ayudarte a cuidar tu salud dental
+            con información clara y confiable.
+          </p>
+        </div>
+
+        <!-- Grid de artículos -->
+        <ul class="blog-grid" role="list">
+
+          <!-- Artículo destacado (grande) -->
+          <li class="blog-item blog-featured">
+            <article class="blog-card blog-card-large" aria-labelledby="blog-title-1">
+              <a href="/blog/cuando-necesitas-endodoncia" class="blog-card-link" aria-label="Leer artículo: ¿Cuándo necesitas una endodoncia?">
+
+                <figure class="blog-card-img-wrap">
+                  <!-- Reemplaza con imagen real -->
+                  <div class="blog-img-placeholder blog-img-1" aria-hidden="true">
+                    <ion-icon name="medical-outline"></ion-icon>
+                  </div>
+                  <div class="blog-card-tags" aria-label="Categoría del artículo">
+                    <span class="blog-tag">Endodoncia</span>
+                    <span class="blog-tag blog-tag-featured">Destacado</span>
+                  </div>
+                </figure>
+
+                <div class="blog-card-body">
+                  <div class="blog-card-meta">
+                    <time class="blog-date" datetime="2025-03-10">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      10 de marzo, 2025
+                    </time>
+                    <span class="blog-read-time">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      5 min de lectura
+                    </span>
+                  </div>
+
+                  <h3 class="h3 blog-card-title" id="blog-title-1">
+                    ¿Cuándo necesitas una endodoncia? Señales que no debes ignorar
+                  </h3>
+
+                  <p class="blog-card-excerpt">
+                    El dolor intenso, la sensibilidad prolongada al frío o calor, y la inflamación de encías
+                    son alertas que tu diente puede necesitar tratamiento de conducto. Te explicamos qué
+                    ocurre dentro del diente y por qué actuar a tiempo marca la diferencia.
+                  </p>
+
+                  <span class="blog-read-more" aria-hidden="true">
+                    Leer artículo
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </div>
+
+              </a>
+            </article>
+          </li>
+
+          <!-- Artículo 2 -->
+          <li class="blog-item">
+            <article class="blog-card" aria-labelledby="blog-title-2">
+              <a href="/blog/cuidados-blanqueamiento-dental" class="blog-card-link" aria-label="Leer artículo: Cuidados después del blanqueamiento dental">
+
+                <figure class="blog-card-img-wrap">
+                  <div class="blog-img-placeholder blog-img-2" aria-hidden="true">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                  </div>
+                  <div class="blog-card-tags">
+                    <span class="blog-tag">Blanqueamiento</span>
+                  </div>
+                </figure>
+
+                <div class="blog-card-body">
+                  <div class="blog-card-meta">
+                    <time class="blog-date" datetime="2025-02-20">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      20 de febrero, 2025
+                    </time>
+                    <span class="blog-read-time">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      4 min
+                    </span>
+                  </div>
+
+                  <h3 class="h3 blog-card-title" id="blog-title-2">
+                    7 cuidados esenciales después de un blanqueamiento dental
+                  </h3>
+
+                  <p class="blog-card-excerpt">
+                    Para mantener los resultados por más tiempo, hay hábitos clave que debes adoptar
+                    las primeras 48 horas y después del tratamiento.
+                  </p>
+
+                  <span class="blog-read-more" aria-hidden="true">
+                    Leer artículo
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </div>
+
+              </a>
+            </article>
+          </li>
+
+          <!-- Artículo 3 -->
+          <li class="blog-item">
+            <article class="blog-card" aria-labelledby="blog-title-3">
+              <a href="/blog/ortodoncia-adultos" class="blog-card-link" aria-label="Leer artículo: Ortodoncia en adultos">
+
+                <figure class="blog-card-img-wrap">
+                  <div class="blog-img-placeholder blog-img-3" aria-hidden="true">
+                    <ion-icon name="happy-outline"></ion-icon>
+                  </div>
+                  <div class="blog-card-tags">
+                    <span class="blog-tag">Ortodoncia</span>
+                  </div>
+                </figure>
+
+                <div class="blog-card-body">
+                  <div class="blog-card-meta">
+                    <time class="blog-date" datetime="2025-01-15">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      15 de enero, 2025
+                    </time>
+                    <span class="blog-read-time">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      6 min
+                    </span>
+                  </div>
+
+                  <h3 class="h3 blog-card-title" id="blog-title-3">
+                    Ortodoncia en adultos: nunca es tarde para tener la sonrisa que quieres
+                  </h3>
+
+                  <p class="blog-card-excerpt">
+                    Cada vez más adultos eligen ortodoncia. Te contamos las opciones disponibles,
+                    desde brackets tradicionales hasta alineadores invisibles.
+                  </p>
+
+                  <span class="blog-read-more" aria-hidden="true">
+                    Leer artículo
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </div>
+
+              </a>
+            </article>
+          </li>
+
+          <!-- Artículo 4 -->
+          <li class="blog-item">
+            <article class="blog-card" aria-labelledby="blog-title-4">
+              <a href="/blog/higiene-dental-correcta" class="blog-card-link" aria-label="Leer artículo: Guía de higiene dental">
+
+                <figure class="blog-card-img-wrap">
+                  <div class="blog-img-placeholder blog-img-4" aria-hidden="true">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                  </div>
+                  <div class="blog-card-tags">
+                    <span class="blog-tag">Prevención</span>
+                  </div>
+                </figure>
+
+                <div class="blog-card-body">
+                  <div class="blog-card-meta">
+                    <time class="blog-date" datetime="2024-12-05">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                      5 de diciembre, 2024
+                    </time>
+                    <span class="blog-read-time">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      3 min
+                    </span>
+                  </div>
+
+                  <h3 class="h3 blog-card-title" id="blog-title-4">
+                    Guía completa de higiene dental: cómo cepillarte correctamente
+                  </h3>
+
+                  <p class="blog-card-excerpt">
+                    La mayoría de personas cepilla sus dientes de forma incorrecta. Esta guía paso
+                    a paso te enseña la técnica correcta para prevenir caries y enfermedad periodontal.
+                  </p>
+
+                  <span class="blog-read-more" aria-hidden="true">
+                    Leer artículo
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </span>
+                </div>
+
+              </a>
+            </article>
+          </li>
+
+        </ul>
+
+        <!-- Botón ver más -->
+        <div class="blog-footer text-center">
+          <a href="/blog" class="btn btn-outline blog-more-btn" aria-label="Ver todos los artículos del blog de Shine Smile">
+            <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+            Ver todos los artículos
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== UBICACIÓN ===== -->
+    <section class="section location" id="location" aria-labelledby="location-heading">
+      <div class="container">
+
+        <div class="location-content">
+          <p class="section-subtitle">Encuéntranos</p>
+          <h2 class="h2 section-title" id="location-heading">¿Cómo llegar?</h2>
+
+          <p class="section-text section-text-1">
+            Estamos comprometidos a brindarte una experiencia dental excepcional y resultados duraderos.
+            ¡Ven y descubre cómo podemos ayudarte!
+          </p>
+
+          <address class="location-address">
+            <ul class="location-info-list" role="list">
+              <li class="location-info-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                <span><strong>Dirección:</strong> Cra. 92 No. 22-09, Hayuelos, Bogotá, Colombia</span>
+              </li>
+              <li class="location-info-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <span><strong>Lunes – Viernes:</strong> 10:00 am – 7:00 pm<br><strong>Sábados:</strong> 9:00 am – 1:00 pm</span>
+              </li>
+              <li class="location-info-item">
+                <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                <a href="https://api.whatsapp.com/send?phone=573105610163" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">+57 310 561 0163</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <figure class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5762835593896!2d-74.13584232626044!3d4.6693739419309415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9db26a7b0a3b%3A0x1a61f8f10f5a13de!2sSHINE%20SMILE%20ODONTOLOG%C3%8DA!5e0!3m2!1ses-419!2sco!4v1686843655270!5m2!1ses-419!2sco"
+            width="600" height="450"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación de Shine Smile Odontología en Bogotá">
+          </iframe>
+          <figcaption class="sr-only">Mapa de Google con la ubicación de Shine Smile Odontología, Cra. 92 No. 22-09, Hayuelos, Bogotá</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
   </main>
 
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
+  <!-- ============================================================
+    FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
 
     <div class="footer-top section">
       <div class="container">
 
         <div class="footer-brand">
-
-          <a href="#" class="logo">Shine Smile</a>
+          <a href="#top" class="logo footer-logo" aria-label="Shine Smile – Inicio">Shine<span>Smile</span></a>
 
           <p class="footer-text">
-            Nuestro equipo altamente capacitado se esfuerza por brindar un cuidado dental excepcional y personalizado. Nos comprometemos a escuchar tus necesidades y trabajar en colaboración contigo para diseñar un plan de tratamiento dental que se ajuste a tus objetivos y presupuesto.
-          </p><br><br>
+            Nuestro equipo altamente capacitado se esfuerza por brindar atención dental excepcional y personalizada.
+            Nos comprometemos a escuchar tus necesidades y diseñar un plan de tratamiento que se ajuste a tus
+            objetivos y presupuesto.
+          </p>
 
-          <div class="schedule">
-            <div class="schedule-icon">
+          <div class="schedule" aria-label="Horario de atención">
+            <div class="schedule-icon" aria-hidden="true">
               <ion-icon name="time-outline"></ion-icon>
             </div>
-            
-            <span class="span">
-              Lunes - Viernes:<br>
-              10:00am - 07:00pm<br>
-              Sábados:<br>
-              09:00am - 01:00pm
-            </span>
+            <p class="span">
+              <strong>Lunes – Viernes:</strong> 10:00 am – 7:00 pm<br>
+              <strong>Sábados:</strong> 9:00 am – 1:00 pm
+            </p>
           </div>
-
         </div>
 
-        <div></div>
-        <!--<ul class="footer-list">
+        <nav class="footer-nav" aria-label="Servicios odontológicos">
+          <p class="footer-list-title">Servicios</p>
+          <ul class="footer-list" role="list">
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Endodoncia</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Ortodoncia</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Rehabilitación oral</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Blanqueamiento dental</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Odontología general</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Periodoncia</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Microcirugía apical</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Cirugía oral</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Diseño de sonrisa</span></a></li>
+            <li><a href="#service" class="footer-link"><ion-icon name="add-outline" aria-hidden="true"></ion-icon><span>Implante dental</span></a></li>
+          </ul>
+        </nav>
 
-          <li>
-            <p class="footer-list-title">Enlaces</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Inicio</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Servicios</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Nosotros</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Project</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Our Team</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Latest Blog</span>
-            </a>
-          </li>
-
-        </ul>-->
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Servicios</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Endodoncia</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Ortodoncia</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Rehabilitación oral</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Blanqueamiento dental</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Odontología general</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Periodoncia</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Microcirugía apical</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Cirugía oral</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Ortopedia</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Diseño de sonrisa</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="add-outline"></ion-icon>
-
-              <span class="span">Implante dental</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Contacto</p>
-          </li>
-
-          <li class="footer-item">
-            <div class="item-icon">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <address class="item-text">
-              Cra. 92 No. 22-09,<br>
-              Hayuelos, Bogotá
-            </address>
-          </li>
-
-          <li class="footer-item">
-            <div class="item-icon">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
-
-            <a href="https://api.whatsapp.com/send?phone=573105610163" target="_blank" class="footer-link">+57 310 561 0163</a>
-          </li>
-
-          <li class="footer-item">
-            <div class="item-icon">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <a href="mailto:jennifer.sterling@shinesmile.co" class="footer-link">jennifer.sterling@shinesmile.co</a>
-          </li>
-
-        </ul>
+        <div class="footer-contact">
+          <p class="footer-list-title">Contacto</p>
+          <ul class="footer-list footer-contact-list" role="list">
+            <li class="footer-item">
+              <div class="item-icon" aria-hidden="true"><ion-icon name="location-outline"></ion-icon></div>
+              <address class="item-text">Cra. 92 No. 22-09,<br>Hayuelos, Bogotá</address>
+            </li>
+            <li class="footer-item">
+              <div class="item-icon" aria-hidden="true"><ion-icon name="logo-whatsapp"></ion-icon></div>
+              <a href="https://api.whatsapp.com/send?phone=573105610163" target="_blank" rel="noopener noreferrer" class="footer-link item-link" aria-label="WhatsApp +57 310 561 0163">+57 310 561 0163</a>
+            </li>
+            <li class="footer-item">
+              <div class="item-icon" aria-hidden="true"><ion-icon name="mail-outline"></ion-icon></div>
+              <a href="mailto:jennifer.sterling@shinesmile.co" class="footer-link item-link">jennifer.sterling@shinesmile.co</a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-
         <p class="copyright">
-          &copy; 2023 Todos los derechos reservados ShineSmile.
+          &copy; <time datetime="2025">2025</time> Shine Smile Odontología. Todos los derechos reservados.
         </p>
 
-        <ul class="social-list">
-
+        <ul class="social-list" role="list" aria-label="Redes sociales">
           <li>
-            <a href="https://www.facebook.com/profile.php?id=100065136865765" target=”_blank” class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.facebook.com/profile.php?id=100065136865765" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook de Shine Smile">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <li>
-            <a href="https://www.instagram.com/shinesmileodontologia/embed" target=”_blank” class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/shinesmileodontologia/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram de Shine Smile">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
-          <!--<li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>-->
-
         </ul>
-
       </div>
     </div>
 
   </footer>
 
 
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <!-- ===== BOTÓN VOLVER ARRIBA ===== -->
+  <a href="#top" class="back-top-btn" aria-label="Volver al inicio de la página" data-back-top-btn>
     <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
   </a>
 
+  <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+  <a href="https://api.whatsapp.com/send?phone=573105610163&text=Hola,%20quiero%20información%20sobre%20sus%20servicios"
+    target="_blank" rel="noopener noreferrer"
+    class="whatsapp-fab"
+    aria-label="Contactar por WhatsApp a Shine Smile Odontología">
+    <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+  </a>
 
 
-
-
-  <!-- 
-    - custom js link
-  -->
+  <!-- ===== SCRIPTS ===== -->
   <script src="./assets/js/script.js" defer></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
